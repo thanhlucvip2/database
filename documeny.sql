@@ -31,6 +31,16 @@ DROP DATABASE thanhlucvip --xóa databse
 	-- nvarchar(): có thể lưu tiếng việt
 -- date : Lưu trữ ngày, tháng, năm, giờ
 -- time : Lưu trữ giờ, phút, giây 
--- byte : lưu giá trị 0 và 1
+-- bit : lưu giá trị 0 và 1
 -- text : Lưu văn bản lớn
 -- ntext : Lưu văn bản lớn có tiếng việt
+
+
+--Ví dụ
+CREATE TABLE thanhlucvip(
+	Doc TEXT, -- cấp phát max khả năng lưu trữ,
+	maSV CHAR(10), --khai báo maSV cấp phát cứng 10 ô nhớ
+	Doc2 NVARCHAR(50), -- khai báo Doc2 kiểu nvarchar cấp phát động 50 ô bộ nhớ
+	Birthday DATE, -- Lưu trữ ngày, tháng, năm, giờ
+	SEX BIT, -- Lưu giá trị 0 hoặc 1
+)
